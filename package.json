@@ -1,0 +1,24 @@
+{
+  "name": "deliveryapp",
+  "version": "1.0.0",
+  "description": "Josh Kumar's delivery app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paysick/deliveryApp.git"
+  },
+  "author": "Josh kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paysick/deliveryApp/issues"
+  },
+  "homepage": "https://github.com/paysick/deliveryApp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "connect-modrewrite": "^0.9.0",
+    "gulp": "^3.9.1"
+  }
+}
