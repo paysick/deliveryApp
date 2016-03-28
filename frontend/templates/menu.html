@@ -1,0 +1,18 @@
+<h2>Menu Items</h2>
+<div>
+	<table>
+      <tr>
+         <th>Item ID</th>
+         <th>Name</th>
+         <th>Price</th>
+         <th>Quantity</th>
+      </tr>
+   
+      <tr ng-repeat = "item in menu">
+         <td>{{ item.itemId }}</td>
+         <td>{{ item.itemName }}</td>
+         <td>{{ item.price }}</td>
+         <td>{{ item.quantity }}</td>
+      </tr>
+   </table>
+</div>
