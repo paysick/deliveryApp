@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dine post 9</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script type="text/javascript" src="deliveryApp.js"></script>
+</head>
+<body ng-app="deliveryApp" ng-controller = "deliveryCtrl">
+	<h2>Menu Items</h2>
+	<div>
+		<table>
+            <tr>
+               <th>Item ID</th>
+               <th>Name</th>
+               <th>Price</th>
+               <th>Quantity</th>
+            </tr>
+         
+            <tr ng-repeat = "item in menu">
+               <td>{{ item.itemId }}</td>
+               <td>{{ item.itemName }}</td>
+               <td>{{ item.price }}</td>
+               <td>{{ item.quantity }}</td>
+            </tr>
+         </table>
+	</div>
+</body>
+</html>
+
+[{"itemId":1,"itemName":"rice","price":40,"quantity":1
