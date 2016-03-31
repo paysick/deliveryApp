@@ -12,7 +12,7 @@ public class Order {
 	private int orderId;
 	private int createdBy;
 	private Date createdAt;
-	private List<MenuItem> orderedItems = new ArrayList();
+	private List<MenuItem> orderedItems = new ArrayList<MenuItem>();
 	private int totalPrice;
 	
 	public Order(){

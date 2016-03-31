@@ -13,7 +13,7 @@ import edu.joshProjects.webapp.deliveryApp.services.MenuServices;
 
 @Path("/menu")
 @Consumes(MediaType.APPLICATION_JSON)
-@Produces(MediaType.APPLICATION_JSON)
+@Produces(value = {MediaType.APPLICATION_JSON, MediaType.TEXT_XML})
 public class MenuResource {
 	
 	MenuServices ms = new MenuServices();

@@ -2,12 +2,13 @@
 <html>
 <head>
 	<title>dine post 9</title>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
 	<script type="text/javascript" src="deliveryApp.js"></script>
 </head>
-<body ng-app="deliveryApp" ng-controller = "deliveryCtrl">
+<body ng-app="myApp" ng-controller = "myCtrl">
 	<h2>Menu Items</h2>
 	<div>
+		<button type="submit" ng-click="data()"> click me! </button>
 		<table>
             <tr>
                <th>Item ID</th>
@@ -15,16 +16,13 @@
                <th>Price</th>
                <th>Quantity</th>
             </tr>
-         
-            <tr ng-repeat = "item in menu">
-               <td>{{ item.itemId }}</td>
-               <td>{{ item.itemName }}</td>
-               <td>{{ item.price }}</td>
-               <td>{{ item.quantity }}</td>
+            <tr ng-repeat="item in menu">
+               <th>{{item.itemId}}</th>
+               <th>{{item.itemName}}</th>
+               <th>{{item.price}}</th>
+               <th>{{item.quantity}}</th>
             </tr>
          </table>
 	</div>
 </body>
 </html>
-
-[{"itemId":1,"itemName":"rice","price":40,"quantity":1
