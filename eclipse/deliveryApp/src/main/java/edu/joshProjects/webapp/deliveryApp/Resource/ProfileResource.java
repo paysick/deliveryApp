@@ -16,8 +16,8 @@ import edu.joshProjects.webapp.deliveryApp.Model.Profile;
 import edu.joshProjects.webapp.deliveryApp.services.ProfileServices;
 
 @Path("/secure/users")
-@Consumes(MediaType.APPLICATION_XML)
-@Produces(MediaType.APPLICATION_XML)
+@Consumes(MediaType.APPLICATION_JSON)
+@Produces(MediaType.APPLICATION_JSON)
 public class ProfileResource {
 
 	private ProfileServices ps = new ProfileServices();

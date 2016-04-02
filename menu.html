@@ -1,0 +1,22 @@
+<div>
+	<h1>Menu for today!</h1>
+	<div >
+		<table class="table .table-hover">
+			<thead>
+
+			</thead>
+			<tbody>
+				<tr style="font-weight: bold;">
+					<td>#</td>
+					<td>Menu Item</td>
+					<td>Price</td>
+				</tr>
+				<tr ng-repeat="item in menu">
+					<td>{{item.itemId}}</td>
+					<td>{{item.itemName}}</td>
+					<td>{{item.price}}/-</td>
+				</tr>				
+			</tbody>
+		</table>
+	</div>
+</div>

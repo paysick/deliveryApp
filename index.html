@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>dine post 9</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-	<script type="text/javascript" src="deliveryApp.js"></script>
+   <title>Navigation Partial</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+   <script type="text/javascript" src="deliveryApp.js"></script>
 </head>
-<body ng-app="myApp" ng-controller = "myCtrl">
-	<h2>Menu Items</h2>
-	<div>
-		<button type="submit" ng-click="data()"> click me! </button>
-		<table>
-            <tr>
-               <th>Item ID</th>
-               <th>Name</th>
-               <th>Price</th>
-               <th>Quantity</th>
-            </tr>
-            <tr ng-repeat="item in menu">
-               <th>{{item.itemId}}</th>
-               <th>{{item.itemName}}</th>
-               <th>{{item.price}}</th>
-               <th>{{item.quantity}}</th>
-            </tr>
-         </table>
-	</div>
+<body ng-app='myApp'>
+   <nav class="navbar navbar-default">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <a class="navbar-brand" href="#menu">
+           <img alt="MENU" src="...">
+         </a>
+       </div>
+       <ul class="nav navbar-nav navbar-right">
+           <li ng-show="authenticated">Logged in as {{userProfile.username}}</li>
+           <li><a href="#login" ng-hide="authenticated">Login</a></li>
+           <li><a href="#logout" ng-show="authenticated">Logout</a></li>
+           <li><a href="#signup" ng-hide="authenticated">signup</a></li>
+       </ul>
+     </div>
+   </nav>
+<div class="col-md-offset-2 col-md-8">
+   <div ng-view></div>
+</div>
+   
 </body>
 </html>
